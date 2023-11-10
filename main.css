@@ -589,13 +589,11 @@ footer {
 .footer__col {
     display: flex;
     align-items: center;
+    margin-left: 140px;
 } 
 
 
 
-.footer .logo{
-    margin-left: 130px;
-}
 
 
 .socials {
@@ -713,14 +711,15 @@ footer {
 
 .breadcrumbs__link {
     color: #666666;
-    font-size: 14px;
-
+    font-size: 16px;
+    margin-right: 5px;
 }
 
 
 .breadcrumbs__item--activ .breadcrumbs__link {
     color: #F5170E;
     text-decoration: none;
+    margin-left: 5px;
 }
 
 
