@@ -589,14 +589,8 @@ footer {
 .footer__col {
     display: flex;
     align-items: center;
-    margin-left: 185px;
 } 
 
-
-
-.footer__col--alignt--right {
-    margin-right: 218px;
-}
 
 
 
@@ -870,6 +864,14 @@ footer {
 
 
 
-.footer__column--alignt--right{
+.footer__column--align--right{
     justify-content: flex-end;
 }
+
+
+
+
+/* ------------------REVIEWS PAGE------------------------- */
+
+
+
