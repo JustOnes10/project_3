@@ -60,6 +60,14 @@ img {
 
 
 
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 .main-page-wrapper{
     background-image: url(./image/first.jpg);
 }
@@ -574,6 +582,12 @@ section.news:last-child {
 
 
 
+.btn--color--grey {
+    background: #001821;
+}
+
+
+
 footer {
     height: 152px;
     border-top: 1px solid #ffffff;
@@ -874,4 +888,323 @@ footer {
 /* ------------------REVIEWS PAGE------------------------- */
 
 
+.reviews {
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 70px;
+}
 
+
+
+.reviews__item {
+    margin-bottom: 20px;
+}
+
+
+
+.review {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background: #f4f5f5;
+}
+
+
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+
+
+
+.review__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+.review__user {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #303030;
+    margin-bottom: 11px;
+    text-decoration: none;
+}
+
+
+.review__user--color--blue {
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+
+.review__user:after {
+    content: url(./image/page_reviews/vk-blue\ 1.png);
+    height: 29px;
+    margin-left: 10px;
+}
+
+
+
+.review__tags {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.tag {
+    font-size: 13px;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: #e6e6e6;
+    background-color: aqua;
+    margin-right: 10px;
+}
+
+
+
+.tag:last-child {
+    margin-right: 0;
+}
+
+
+
+.tag--bg--green {
+    background: #e6e6e6;
+}
+
+
+
+.review__title {
+    font-size: 30px;
+    color: #001821;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+
+
+.review__content-text {
+    margin-bottom: 50px;
+}
+
+
+
+.review__data {
+    font-size: 14px;
+    color: #001821;
+    font-weight: bold;
+}
+
+
+
+.review__userdata {
+    margin-left: 20px;
+}
+
+
+.seperator {
+    background: url(./image/page_reviews/Прямоугольник.png) center bottom no-repeat;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.seperator__content {
+    max-width: 53%;
+}
+
+
+
+.seperator__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+
+
+.form__row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+
+.form__input {
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 4px;
+    border: none;
+    background: #ffffff;
+    padding: 22px 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+.form__input:last-child {
+    margin-right: 0;
+}
+
+
+
+.form__input::placeholder {
+    color: #666;
+}
+
+
+
+.form__input--textarea {
+    height: 232px;
+}
+
+
+
+.controls__elem {
+    cursor: pointer;
+}
+
+
+
+.controls__checkbox:checked ~ .controls__tag{
+    background: rgb(157, 152, 204);
+}
+
+
+
+.controls__checkbox {
+    display: none;
+}
+
+
+
+.form__controls {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+
+
+.form__controls-title {
+    width: 40%;
+    padding-left: 30px;
+}
+
+
+
+.controls {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.controls__item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+
+.form__btn {
+    margin-right: 20px;
+}
+
+
+
+.form__btn:last-child {
+    margin-right: 0;
+}
+
+
+
+.form__btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/* ------------------WELCOME PAGE------------------------- */
+
+
+
+.welcome {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(./image/page_welcome/bg.png) right -141px top 22px  no-repeat;
+}
+
+
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 1.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.central__desc {
+    margin-bottom: 65px;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-30px);
+    }
+
+    35% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(-15px);
+    }
+
+    65% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-4px);
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 20;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
