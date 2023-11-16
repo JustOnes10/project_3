@@ -1260,7 +1260,6 @@ footer {
 }
 
 
-
 .icon:hover:before {
     opacity: 1;
 }
@@ -1270,9 +1269,6 @@ footer {
 }
 
 
-
-
-
 .icon:after {
     content: "";
     position: absolute;
@@ -1280,8 +1276,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background: url('./image/png_sprites/css_sprites.png') -329px -10px no-repeat;
-    width: 300px; /* Розмір іконки у спрайті */
-    height: 300px; /* Розмір іконки у спрайті */
+    width: 300px;
     display: block;
     transition: .3s;
 }
@@ -1295,8 +1290,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background: url('./image/png_sprites/css_sprites.png') -649px -10px no-repeat;
-    width: 300px; /* Розмір іконки у спрайті */
-    height: 300px; /* Розмір іконки у спрайті */
+    width: 300px;
     display: block;
     opacity: 0;
     transition: .3s;
