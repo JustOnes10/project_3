@@ -84,7 +84,7 @@ button {
 
 .header {
     padding-top: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,9 +135,43 @@ button {
 
 
 
-.contacts__dropdawn-title {
+.contacts__dropdown-title {
+    position: relative;
+    cursor: pointer;
     font-size: 13px;
     text-decoration: underline;
+}
+
+
+
+.contacts__hours-tooltip {
+    visibility: hidden;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    left: 10%;
+    bottom: -63px;
+    box-shadow: 0px 0px 10px #F5170E;
+}
+
+
+
+.contacts__hours-tooltip::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    margin-left: -25px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #bf8482 transparent;
+}
+
+
+
+.contacts__dropdown-title:hover .contacts__hours-tooltip {
+    visibility: visible;
 }
 
 
@@ -1210,4 +1244,62 @@ footer {
         opacity: 1;
     }
 }
-аА
+
+
+/* ------------------png sprites------------------------- */
+
+
+.icon {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+
+.icon:hover:before {
+    opacity: 1;
+}
+
+.icon:hover:after {
+    opacity: 0;
+}
+
+
+
+
+
+.icon:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./image/png_sprites/css_sprites.png') -329px -10px no-repeat;
+    width: 300px; /* Розмір іконки у спрайті */
+    height: 300px; /* Розмір іконки у спрайті */
+    display: block;
+    transition: .3s;
+}
+
+
+
+.icon:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./image/png_sprites/css_sprites.png') -649px -10px no-repeat;
+    width: 300px; /* Розмір іконки у спрайті */
+    height: 300px; /* Розмір іконки у спрайті */
+    display: block;
+    opacity: 0;
+    transition: .3s;
+}
+
+
