@@ -1110,6 +1110,8 @@ footer {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -10px;
+    margin-right: -10px;
 }
 
 
@@ -1208,3 +1210,4 @@ footer {
         opacity: 1;
     }
 }
+аА
