@@ -151,9 +151,9 @@ button {
     border-radius: 6px;
     padding: 8px;
     position: absolute;
-    left: 10%;
     bottom: -63px;
     box-shadow: 0px 0px 10px #F5170E;
+    right: 0;
 }
 
 
@@ -1052,6 +1052,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 
@@ -1190,7 +1191,8 @@ footer {
     height: 100%;
     align-items: center;
     justify-content: center;
-    background: url(./image/page_welcome/bg.png) right -141px top 22px  no-repeat;
+    background: url(./image/page_welcome/bg.png) right 1% top 22px  no-repeat;
+    background-size: cover;
 }
 
 
